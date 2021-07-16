@@ -1,4 +1,2 @@
-alert('Hello world');
-
-var FavoriteFood = "potatoes";
-document.write(FavoriteFood)
+let myVariable: "pokemonList";
+console.log(typeof myVariable);

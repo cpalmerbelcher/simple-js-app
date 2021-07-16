@@ -7,20 +7,20 @@ let pokemon1 = {
   type: "grass"
 };
 
-let pokemon1 = {
+let pokemon2 = {
   name: "charmander",
   height: "7",
   type: "fire"
 };
 
-let pokemon1 = {
+let pokemon3 = {
   name: "squirtle",
   height: "7",
   type: "water"
 };
 
-let pokemon1 = {
+let pokemon4 = {
   name: "spearow",
-  height: "7", 
+  height: "7",
   type: "air"
 };

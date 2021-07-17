@@ -1,4 +1,4 @@
-let pokemonList = (function () {
+let pokedex = (function () {
 
 let pokemonList = [
   {

@@ -30,4 +30,4 @@ for (let i = 0; i < pokedex.length; i++){
 		document.write(`<p> ${pokedex[i].name} (height: ${pokedex[i].height}")</p>`);
 }
 
-})();
+});

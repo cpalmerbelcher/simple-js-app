@@ -21,10 +21,9 @@ let pokemonList = [
     height: "3",
     type: ['air', 'flying'],
   },
-]
+];
+
 for (let i = 0; i < pokemonList.length; i++){
   	console.log (pokemonList[i].height > 5);
     document.write("<p>" + list[i].name "</p>")
-
-
 }

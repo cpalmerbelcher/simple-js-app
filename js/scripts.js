@@ -23,9 +23,9 @@ let pokemonList = [
   },
 ];
 
-for (let i = 0; i < pokemonList.length; i++){
+for (let i = 0; i < pokedex.length; i++){
 	if (pokemonList[i].height > 5) {
-		document.write(`<p> ${pokedex[i].name} (height: ${pokedex[i].height}") - I am a tall Pokemon! </p>`);
+		document.write(`<p> ${pokedex[i].name} (height: ${pokedex[i].height}") - Wow, that's big! </p>`);
 	} else {
 		document.write(`<p> ${pokedex[i].name} (height: ${pokedex[i].height}")</p>`);
 }

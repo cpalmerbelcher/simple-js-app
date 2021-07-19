@@ -22,7 +22,7 @@ let pokemonList = [
     type: ['air', 'flying'],
   },
 ]
-for (let i = 0; i < pokemonList.height; i++){
+for (let i = 0; i < pokemonList.length; i++){
   	if (pokemonList[i].height > 5) {
   		document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}") - Wow, that's big! </p>`);
   	} else {

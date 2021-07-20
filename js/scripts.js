@@ -1,4 +1,4 @@
-let pokedex = (function () {
+let pokedex = function () {
   let pokemonList = [
     {
       name: 'blubasaur',

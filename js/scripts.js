@@ -28,4 +28,5 @@ for (let i = 0; i < pokemonList.length; i++){
     document.write("<p>" + list[i].name + "</p>")
   }
 
+pokedex ()
 }

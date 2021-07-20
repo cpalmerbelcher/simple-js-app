@@ -24,7 +24,7 @@ let pokedex = function () {
 
   for (let i = 0; i < pokemonList.length; i++) {
     	console.log (pokemonList[i].height > 5)
-      document.write('<p>' + pokemonList[i].name + pokemonList[i].height + Wow, that's big! '</p>');
+      document.write('<p>' + pokemonList[i].name + pokemonList[i].height + '</p>');
     }
 }
 

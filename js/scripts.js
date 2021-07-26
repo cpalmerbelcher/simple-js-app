@@ -17,7 +17,7 @@ let pokemonRepository = (function () {
 
 console.log(pokemonRepository.getAll()); // []
 pokemonRepository.add({ name: 'blubasaur', height: '7', type: 'grass' });
-console.log(pokemonRepository.getAll()); // [ { name: 'Pikachu' } ]
+console.log(pokemonRepository.getAll()); // [ { name: 'blubasaur' } ]
   }
 
 /* let pokemonRepository = function () {

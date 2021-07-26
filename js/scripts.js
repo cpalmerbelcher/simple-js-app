@@ -26,7 +26,9 @@ let pokedex = function () {
     pokemonList.getAll().forEach(function(pokemonList) {
       pokemonList.addListItem(pokemonList);
     });
-  })
+  });
+
+  pokemonList.search();
 
 
   /* for (let i = 0; i < pokemonList.length; i++) {
@@ -34,9 +36,9 @@ let pokedex = function () {
       document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) - Wow, that's big! </p>`);
     } else {
       document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) </p>`);
-    } */
+    }
 
     }
 }
 
-pokedex()
+pokedex()*/

@@ -25,7 +25,8 @@ let pokedex = function () {
   pokemonList.loadList().then(function() {
 	   pokemonList.getAll().forEach(function(pokemon){
 		     pokemonList.addListItem(pokemon);
-
+          });
+          
   /* for (let i = 0; i < pokemonList.length; i++) {
     if(pokemonList[i].height > 5){
       document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) - Wow, that's big! </p>`);

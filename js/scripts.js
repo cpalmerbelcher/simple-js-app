@@ -16,12 +16,12 @@ let pokemonRepository = (function () {
   })();
 
 console.log(pokemonRepository.getAll()); // []
-pokemonRepository.add({ name: 'Pikachu' });
+pokemonRepository.add({ name: 'blubasaur', '7', 'grass' });
 console.log(pokemonRepository.getAll()); // [ { name: 'Pikachu' } ]
 function loadList() {
     console.log("hello!");
   }
-  
+
 /* let pokemonRepository = function () {
   let pokemonList = [
     {

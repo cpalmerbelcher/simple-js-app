@@ -1,4 +1,4 @@
-let pokedex = function () {
+let pokemonRepository = function () {
   let pokemonList = [
     {
       name: 'blubasaur',
@@ -22,13 +22,17 @@ let pokedex = function () {
     },
   ];
 
-  pokemonList.loadList().then(function() {
-    pokemonList.getAll().forEach(function(pokemonList) {
-      pokemonList.addListItem(pokemonList);
-    });
-  });
+  pokemonRepository.getAll().forEach(function(pokemon) {
+  document.write(pokemon.name + " " + "height : " + pokemon.height + " " + pokemon.type + "</br>");
+});
 
-  pokemonList.search();
+pokemonRepository.loadList().then(function() {
+	pokemonRepository.getAll().forEach(function(pokemon){
+		pokemonRepository.addListItem(pokemon);
+	});
+});
+
+pokemonRepository.search();
 
 
   /* for (let i = 0; i < pokemonList.length; i++) {
@@ -36,9 +40,9 @@ let pokedex = function () {
       document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) - Wow, that's big! </p>`);
     } else {
       document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) </p>`);
-    }
+    }*/
 
     }
 }
 
-pokedex()*/
+/* pokedex()*/

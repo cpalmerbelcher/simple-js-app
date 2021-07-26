@@ -47,7 +47,7 @@ function loadList() {
   ];*/
 
   pokemonRepository.getAll().forEach(function(pokemon) {
-  document.write(pokemon.name + " " + "height : " + pokemon.height + " " + pokemon.type + "</br>");
+  document.write(pokemon.name + " " + "height : " + pokemon.height + " " + pokemon.type + "</br>" .join);
 });
 
 pokemonRepository.loadList().then(function() {

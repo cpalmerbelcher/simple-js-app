@@ -1,15 +1,20 @@
 let pokemonRepository = (function () {
   let pokemonList = []; // empty array
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=900';
 
-  return {
-    add: function(pokemon) {
+  function add(pokemon) {
       pokemonList.push(pokemon);
-    },
-    getAll: function() {
+    }
+
+    function getAll() {
       return pokemonList;
     }
-  };
-})();
+
+    return {
+      add: add,
+      getAll: getAll
+    };
+  })();
 
 console.log(pokemonRepository.getAll()); // []
 pokemonRepository.add({ name: 'Pikachu' });

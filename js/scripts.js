@@ -35,14 +35,14 @@ pokemonRepository.loadList().then(function() {
 pokemonRepository.search();
 
 
-  /* for (let i = 0; i < pokemonList.length; i++) {
+   for (let i = 0; i < pokemonList.length; i++) {
     if(pokemonList[i].height > 5){
       document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) - Wow, that's big! </p>`);
     } else {
       document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) </p>`);
     }*/
 
-    }
+    /*}
 }
 
-/* pokedex()*/
+pokedex()*/

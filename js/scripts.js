@@ -18,7 +18,10 @@ let pokemonRepository = (function () {
 console.log(pokemonRepository.getAll()); // []
 pokemonRepository.add({ name: 'Pikachu' });
 console.log(pokemonRepository.getAll()); // [ { name: 'Pikachu' } ]
-
+function loadList() {
+    console.log("hello!);
+  }
+  
 /* let pokemonRepository = function () {
   let pokemonList = [
     {

@@ -23,5 +23,11 @@ pokemonRepository.add({ name: 'spearow', height: '3', type: 'air' });
 console.log(pokemonRepository.getAll());
 
   pokemonRepository.getAll().forEach(function(pokemon) {
-  document.write(pokemon.name + " " + "height : " + pokemon.height + "," + " " + pokemon.type + "</br>");
+    let pokemonList = document.querySelector(".pokemon-list");
+    let listpokemon = document.createElement("li");
+    let button = document.createElement("button");
+    button.innerText = "placeholder";
+    button.classList.add("button-class")
+    listpokemon.appendChild(button);
+    pokemonList.appendChild(listpokemon);
 });

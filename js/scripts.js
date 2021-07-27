@@ -17,12 +17,19 @@ let pokemonRepository = (function () {
       button.classList.add("button-class")
       listpokemon.appendChild(button);
       pokemonList.appendChild(listpokemon);
+      button.addEventListener('click', function(event) {
+        showDetails(pokemon);
+      });
+    }
+
+    function showDetails(pokemon) {
+      console.log(pokemon.name);
     }
 
     return {
       add: add,
-      getAll: getAll
-      addListItem: addListItem
+      getAll: getAll,
+      addListItem: addListItem,
     };
   })();
 

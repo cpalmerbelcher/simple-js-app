@@ -9,9 +9,20 @@ let pokemonRepository = (function () {
       return pokemonList;
     }
 
+    function addListItem(pokemon) {
+      let pokemonList = document.querySelector(".pokemon-list");
+      let listpokemon = document.createElement("li");
+      let button = document.createElement("button");
+      button.innerText = pokemon.name;
+      button.classList.add("button-class")
+      listpokemon.appendChild(button);
+      pokemonList.appendChild(listpokemon);
+    }
+
     return {
       add: add,
       getAll: getAll
+      addListItem: addListItem
     };
   })();
 
@@ -23,11 +34,5 @@ pokemonRepository.add({ name: 'spearow', height: '3', type: 'air' });
 console.log(pokemonRepository.getAll());
 
   pokemonRepository.getAll().forEach(function(pokemon) {
-    let pokemonList = document.querySelector(".pokemon-list");
-    let listpokemon = document.createElement("li");
-    let button = document.createElement("button");
-    button.innerText = pokemon.name;
-    button.classList.add("button-class")
-    listpokemon.appendChild(button);
-    pokemonList.appendChild(listpokemon);
+    pokemonRepository.addListItem(pokemon);
 });

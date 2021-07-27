@@ -17,7 +17,10 @@ let pokemonRepository = (function () {
 
 console.log(pokemonRepository.getAll()); // []
 pokemonRepository.add({ name: 'blubasaur', height: '7', type: 'grass' });
-console.log(pokemonRepository.getAll()); // [ { name: 'blubasaur' } ]
+pokemonRepository.add({ name: 'blubasaur', height: '7', type: 'grass' });
+pokemonRepository.add({ name: 'blubasaur', height: '7', type: 'grass' });
+pokemonRepository.add({ name: 'blubasaur', height: '7', type: 'grass' });
+console.log(pokemonRepository.getAll());
 
   pokemonRepository.getAll().forEach(function(pokemon) {
   document.write(pokemon.name + " " + "height : " + pokemon.height + "," + " " + pokemon.type + "</br>");

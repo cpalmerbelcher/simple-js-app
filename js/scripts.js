@@ -18,31 +18,6 @@ let pokemonRepository = (function () {
 console.log(pokemonRepository.getAll()); // []
 pokemonRepository.add({ name: 'blubasaur', height: '7', type: 'grass' });
 console.log(pokemonRepository.getAll()); // [ { name: 'blubasaur' } ]
-  }
-
-/* let pokemonRepository = function () {
-  let pokemonList = [
-    {
-      name: 'blubasaur',
-      height: '7',
-      type: ['grass', 'poison'],
-    },
-    {
-      name: 'charmander',
-      height: '6',
-      type: ['fire', 'blaze'],
-    },
-    {
-      name: 'squirtle',
-      height: '5',
-      type: ['water', 'swiming'],
-    },
-    {
-      name: 'spearow',
-      height: '3',
-      type: ['air', 'flying'],
-    },
-  ];*/
 
   pokemonRepository.getAll().forEach(function(pokemon) {
   document.write(pokemon.name + " " + "height : " + pokemon.height + "," + " " + pokemon.type + "</br>");
@@ -55,16 +30,3 @@ pokemonRepository.loadList().then(function() {
 });
 
 pokemonRepository.search();
-
-
-   /*for (let i = 0; i < pokemonList.length; i++) {
-    if(pokemonList[i].height > 5){
-      document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) - Wow, that's big! </p>`);
-    } else {
-      document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) </p>`);
-    }*/
-
-    /*}
-}
-
-pokedex()*/

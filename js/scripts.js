@@ -23,6 +23,7 @@ console.log(pokemonRepository.getAll()); // [ { name: 'blubasaur' } ]
   document.write(pokemon.name + " " + "height : " + pokemon.height + "," + " " + pokemon.type + "</br>");
 });
 
+pokemonRepository.loadList().then(function() {
 	pokemonRepository.getAll().forEach(function(pokemon){
 		pokemonRepository.addListItem(pokemon);
 	});

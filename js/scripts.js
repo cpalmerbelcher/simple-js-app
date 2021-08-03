@@ -1,6 +1,7 @@
 let pokemonRepository = (function () {
   let pokemonList = []; // empty array
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let modalContainer = document.querySelector('#modal-container');
 
   function add(pokemon) {
     if (
@@ -23,8 +24,10 @@ let pokemonRepository = (function () {
       let button = document.createElement("button");
       button.innerText = pokemon.name;
       button.classList.add("button-class");
+
       listpokemon.appendChild(button);
       pokemonList.appendChild(listpokemon);
+
       button.addEventListener('click', function(event) {
         showDetails(pokemon);
       });
@@ -61,11 +64,27 @@ let pokemonRepository = (function () {
     });
   }
 
-  function showDetails(item) {
-      pokemonRepository.loadDetails(item).then(function () {
-        console.log(item);
-      });
-    }
+  function showModal(title, text) {
+    modalContainer.innerHTML = '';
+    let modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    let closeButtonElement = document.createElement('button');
+    closeButtonElement.classList.add('modal-close');
+    closeButtonElement.innerText = 'Close';
+    closeButtonElement.addEventListener('click', hideModal);
+
+    let titleElement = document.createElement('h1');
+    titleElement.innerText = title;
+
+    let contentElement = document.createElement('p');
+    contentElement.innerText = text;
+
+    modal.appendChild(nameElement);
+    modal.appendChild(heightElement);
+    modal.appendChild(weightElement);
+
+  }
 
   return {
     add: add,
@@ -73,7 +92,7 @@ let pokemonRepository = (function () {
     addListItem: addListItem,
     loadList: loadList,
     loadDetails: loadDetails,
-    showDetails: showDetails
+    showDetails: showModal
   };
 })();
 

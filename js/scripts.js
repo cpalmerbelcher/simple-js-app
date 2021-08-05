@@ -91,7 +91,7 @@ let pokemonRepository = (function () {
     contentElement.innerText = pokemon.detailsUrl;
 
     let heightElement = document.createElement('p');
-    heightElement.innerText = 'Height: + pokemon.height';
+    heightElement.innerText = 'Height: ' + pokemon.height;
 
     modal.appendChild(titleElement);
     modal.appendChild(contentElement);
@@ -99,6 +99,7 @@ let pokemonRepository = (function () {
     modal.appendChild(closeButtonElement);
     // modal.appendChild(weightElement);
     modalContainer.appendChild(modal);
+
     modalContainer.classList.add('is-visible');
   }
 

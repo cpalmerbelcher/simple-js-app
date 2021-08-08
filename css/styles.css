@@ -36,6 +36,8 @@
   /* this is used to center the modal */
   display: grid;
   text-align: center;
+
+  display: none;
 }
 
 .modal {
@@ -47,4 +49,8 @@
   width: 100%;
   max-width: 700px;
   text-align: left;
+}
+
+#modal-container.is-visible {
+  display: grid;
 }

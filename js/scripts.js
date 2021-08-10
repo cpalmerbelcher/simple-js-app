@@ -51,8 +51,8 @@ let pokemonRepository = (function () {
     })
   }
 
-  function loadDetails(item) {
-    let url = item.detailsUrl;
+  function loadDetails(pokemon) {
+    let url = pokemon.detailsUrl;
     return fetch(url).then(function (response) {
       return response.json();
     })
@@ -87,8 +87,8 @@ let pokemonRepository = (function () {
     let titleElement = document.createElement('h1');
     titleElement.innerText = pokemon.name;
 
-    let contentElement = document.createElement('p');
-    contentElement.innerText = pokemon.imageUrl;
+    let imageElement = document.createElement('img');
+    imageElement.innerText = pokemon.imageUrl;
 
     let heightElement = document.createElement('p');
     heightElement.innerText = 'Height: ' + pokemon.height;

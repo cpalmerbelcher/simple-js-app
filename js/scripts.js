@@ -88,13 +88,13 @@ let pokemonRepository = (function () {
     titleElement.innerText = pokemon.name;
 
     let imageElement = document.createElement('img');
-    imageElement.innerText = pokemon.imageUrl;
+    imageElement.src = pokemon.imageUrl;
 
     let heightElement = document.createElement('p');
     heightElement.innerText = 'Height: ' + pokemon.height;
 
     modal.appendChild(titleElement);
-    modal.appendChild(contentElement);
+    modal.appendChild(imageElement);
     modal.appendChild(heightElement);
     modal.appendChild(closeButtonElement);
     // modal.appendChild(weightElement);
@@ -125,7 +125,7 @@ let pokemonRepository = (function () {
     addListItem: addListItem,
     loadList: loadList,
     loadDetails: loadDetails,
-    showDetails: showModal
+    showDetails: showDetails,
   };
 })();
 

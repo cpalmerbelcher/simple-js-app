@@ -1,7 +1,7 @@
-/* background color: FFF5E1 cream */
-/* font color: 0D3522 dark green */
-/* button color: F7432B red */
-/* other color: 2FCCBB blue */
+/* background color: #fff3e0 cream */
+/* font color: #004D43 dark green */
+/* button color: #FF5252 red */
+/* other color: #02bfa5 blue */
 
 
 .button-class {
@@ -17,8 +17,6 @@
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: white;
-  color: black;
   border: 2px solid #4caf50;
 }
 
@@ -57,4 +55,16 @@
   /* this is used to center the modal */
   text-align: center;
 
+}
+
+ul {
+  list-style-type: none;
+  }
+
+.pokemon-header {
+  font-family: 'Fredoka One', cursive;
+}
+
+.page-header {
+  background-color: #fff3e0 !important;
 }

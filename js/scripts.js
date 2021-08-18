@@ -91,9 +91,9 @@ let pokemonRepository = (function () {
     let heightElement = document.createElement('p');
     heightElement.innerText = 'Height: ' + pokemon.height;
 
-    modal.append(titleElement);
-    modal.append(imageElement);
-    modal.append(heightElement);
+    modalTitle.append(titleElement);
+    modalBody.append(imageElement);
+    modalBody.append(heightElement);
   }
 
   return {

@@ -10,12 +10,15 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
     </head>
 
   <body>
-        <!-- title and header !-->
+        <!-- title and header plus serach bar !-->
     <header class="page-header">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="img/pokeball.svg" width="30" height="30" alt="">
@@ -23,12 +26,12 @@
           <h1 class="title pokemon-header">Pokedex</h1>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Enter Pokemon" id="search-bar" aria-label="Search">
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
       </nav>
     </header>
       <div class="container mt-5">
-        <ul class='list-group'></ul>
     </div>
 
     <!-- Modal !-->
@@ -51,7 +54,12 @@
     </div>
     <!-- Modal End -->
 
-    <!-- Button !-->
+    <!-- list of pokemon -->
+    <div>
+      <ul class='list-group'></ul>
+    </div>
+
+    <!-- Button at bottom of the list !-->
       <button type="button" class="btn btn-success" id="btn-back-to-top">
         &#8593;
       </button>
